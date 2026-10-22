@@ -1,0 +1,46 @@
+{
+  "name": "@fluctuateplus/enzocli",
+  "version": "1.2.0",
+  "description": "Enzo CLI - a Textual chat app for Termux / Acode that talks to OpenRouter and edits your project",
+  "keywords": [
+    "ai",
+    "cli",
+    "agent",
+    "enzo",
+    "openrouter",
+    "textual",
+    "termux",
+    "acode",
+    "tui"
+  ],
+  "license": "MIT",
+  "bin": {
+    "enzo": "bin/enzocli.js",
+    "enzocli": "bin/enzocli.js"
+  },
+  "files": [
+    "ai_cli.py",
+    "bin/",
+    "scripts/",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "publish": "node scripts/publish.js",
+    "publish:public": "NPM_ACCESS=public node scripts/publish.js",
+    "publish:private": "NPM_ACCESS=restricted node scripts/publish.js",
+    "publish:enzorenz": "NPM_SCOPE=enzorenz NPM_ACCESS=public node scripts/publish.js",
+    "test": "node scripts/selftest.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "os": [
+    "android",
+    "darwin",
+    "linux"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

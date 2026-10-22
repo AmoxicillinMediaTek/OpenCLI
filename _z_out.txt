@@ -1,0 +1,24 @@
+=== tree ===
+.npmignore
+README.md
+ai_cli.py
+bin
+fluctuateplus-enzocli-1.2.0.tgz
+package.json
+scripts
+
+=== npm test ===
+ok   the key was saved
+ok   the provider was saved
+ok   the config was written
+
+all checks passed
+
+
+all checks passed
+
+=== installed ===
+1.2.0
+├── @fluctuateplus/enzocli@1.2.0
+└── @opencode/cli@2.1.2
+
